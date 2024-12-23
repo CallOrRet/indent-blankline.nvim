@@ -457,7 +457,7 @@ end
 ---@return T
 M.tbl_join = function(...)
     ---@diagnostic disable-next-line: deprecated
-    return vim.iter and vim.iter({ ... }):flatten():totable() or vim.tbl_flatten { ... }
+    return vim.tbl_flatten { ... }
 end
 
 ---@generic T
